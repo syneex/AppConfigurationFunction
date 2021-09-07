@@ -18,7 +18,7 @@ namespace AppConfigurationFunction
         public override void ConfigureAppConfiguration(IFunctionsConfigurationBuilder builder)
         {
             string connectionString = Environment.GetEnvironmentVariable("appConfigurationConnectionString");
-            builder.ConfigurationBuilder.AddAddAzureAppConfiguration(connectionString);
+            builder.ConfigurationBuilder.AddAzureAppConfiguration(connectionString);
         }
 
         /// <summary>
